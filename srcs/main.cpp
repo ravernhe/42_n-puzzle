@@ -9,6 +9,7 @@ int main (int ac, char **av){
     
     Parser parse(av[1]);
     parse.content_file();
+
     Solver solve(parse.get_grid(), parse.get_puzzle_size());
-    solve.solve();
+    // solve.solve();
 }

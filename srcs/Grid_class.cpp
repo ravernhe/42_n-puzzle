@@ -1,12 +1,12 @@
 #include "../includes/npuzzle.hpp"
 
-Grid::Grid(int size, int **grid=nullptr)
+Grid::Grid(int size, int **grid)
 {
     _puzzle_size = size;
     create();
-    // if (grid){ // Si grid non vide on cpy
-    //     cpy_grid(grid);
-    // }
+    if (grid){ // Si grid non vide on cpy
+        cpy_grid(grid);
+    }
 }
 
 Grid::~Grid()
@@ -34,8 +34,11 @@ void    Grid::print_grid(){
     }
     std::cout << "\n";
 }
+
+// Fonction Get_empty -> make_all move and if k save
+
 int    Grid::move_grid(int mov){
-    int j = 0, i = 0, token = 0;
+    int j = 0, i = 0, token = 0; // Function get_empty ?
     while (++i < _puzzle_size && token == 0){
         j = 0;
         while (++j < _puzzle_size){
@@ -75,7 +78,7 @@ int    Grid::move_grid(int mov){
     return 0;
 }
 
-int     **Grid::cpy_grid(int **initial_grid){
+void    Grid::cpy_grid(int **initial_grid){
     int i = 0;
     int j;
 

@@ -19,7 +19,7 @@ void Parser::content_file() {
     _file.open(_puzzle);
 
     if (_file.is_open()) {
-        while ( getline (_file,_line) )
+        while (getline (_file,_line))
         {
             int i = 0;
             while (i < (int)_line.length()) {
@@ -105,10 +105,10 @@ int	Parser::ft_atoi(const char *str)
 	return (r * n);
 }
 
-// int Parser::get_puzzle_size() {
-//     return(_puzzle_size);
-// }
+int Parser::get_puzzle_size() {
+    return(_puzzle_size);
+}
 
-// int **Parser::get_grid() {
-//     return(_grid);
-// }
+int **Parser::get_grid() {
+    return(_grid);
+}

@@ -9,7 +9,7 @@ public:
     void    print_grid();
     void    create();
     int     move_grid(int mov);
-    int     **cpy_grid(int **initial_grid);
+    void    cpy_grid(int **initial_grid);
     int     get_puzzle_size();
     int     **get_grid();
 };

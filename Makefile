@@ -13,7 +13,7 @@
 NAME = npuzzle
 
 CC = g++
-CFLAG = -Wall -Wextra -Werror
+CFLAG = #-Wall -Wextra -Werror
 
 SRC_PATH	= ./srcs/
 INC_PATH	= ./includes/
