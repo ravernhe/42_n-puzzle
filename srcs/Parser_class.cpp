@@ -12,7 +12,6 @@ Parser::~Parser()
         delete[] _grid[i];
     }
     delete[] _grid;
-
 }
 
 void Parser::content_file() {

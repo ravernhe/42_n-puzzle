@@ -1,0 +1,9 @@
+npuzzle-3-1.txt - solved 92 iter
+npuzzle-3-2.txt
+npuzzle-3-3.txt - solved 0 move
+
+* Check if doublon in parents
+*' PARENT ISN'T GETTING ASSIGNED NEW ADRRESS
+** Check Closed state
+*** VECTOR WORTH ZERO POINT -> Redo with an other struct (hashtable? non, Stock Data by F value in opened)
+**** SEGFAULT SIZE = 4, MEM ISSUES

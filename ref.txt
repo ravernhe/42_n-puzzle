@@ -1,3 +1,8 @@
 Implementing A-star(A*) to solve N-Puzzle: 
 	https://algorithmsinsight.wordpress.com/graph-theory-2/a-star-in-general/implementing-a-star-to-solve-n-puzzle/
 
+Taquin Impossible :
+	https://www.youtube.com/watch?v=-3IsCOJieCc
+
+Algo taquin solvable :
+	https://codes-sources.commentcamarche.net/source/100983-taquin-insoluble
