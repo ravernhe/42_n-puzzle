@@ -1,5 +1,0 @@
-# Pas de solution
-3
-4 2 5
-1 0 6
-3 8 7
