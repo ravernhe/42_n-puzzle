@@ -1,5 +1,29 @@
-import sys, re
+import sys, re, grid_utilis
 import numpy as np
+
+def is_solvable(puzzle):
+    solution = grid_utilis.snail_solution(len(puzzle[0]))
+    solution = np.concatenate(np.int64(solution))
+    puzzle = np.concatenate(np.int64(puzzle))
+
+    inversion = 0
+    # print("Solution : ", solution, " && Puzzle : ", puzzle)
+
+    for i in range(len(puzzle) - 1):
+        vi = puzzle[i]
+        for j in range(i + 1, len(puzzle)) :
+            vj = puzzle[j]
+            if np.where(solution == vi) > np.where(solution == vj):
+                inversion += 1
+
+    for i in range(len(solution)):
+        if solution[i] == 0:
+            pos_x_y = i
+
+    # print("Inversion : ", inversion, " && Pos_x_y : ", pos_x_y)
+    if (inversion % 2 != pos_x_y % 2):
+        print("Non solvable")
+        exit(0)
 
 def error_list(puzzle, size):
     values = np.unique(puzzle)
@@ -28,5 +52,5 @@ def read_file(file_name):
             lines = file.read().split("\n")
             return catch_error(lines)
     except:
-        print("Parsing error")
+        print("Error while parsing.")
         exit()
